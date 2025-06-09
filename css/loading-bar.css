@@ -1,0 +1,61 @@
+.pace {
+	-webkit-pointer-events: none;
+	pointer-events: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+	z-index: 2000;
+	position: fixed;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 200px;
+	height: 4px;
+	overflow: hidden;
+	border-radius: 4px;
+}
+
+.pace .pace-progress {
+	height: 100%;
+	width: 0;
+	border-radius: 4px;
+    width: 0;
+    border-radius: 4px;
+    background: linear-gradient(90deg, #e6a23c, #d89747, #c57d0c);
+    animation: loading 1.5s ease-in-out infinite;
+    box-shadow: none !important;
+    transform: none !important;
+    margin-right: 0 !important;
+    font-size: 0 !important;
+    color: transparent !important;
+}
+
+/* 隐藏原活动指示器 */
+.pace .pace-activity {
+    display: none;
+}
+
+/* 隐藏原文本显示 */
+.pace .pace-progress:after {
+    display: none;
+}
+
+/* 加载动画 */
+@keyframes loading {
+    0% { 
+        width: 0; 
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% { 
+        width: 100%; 
+        opacity: 0.5;
+    }
+}
+
+/* 当进度条不活动时隐藏 */
+.pace.pace-inactive {
+    display: none;
+}
