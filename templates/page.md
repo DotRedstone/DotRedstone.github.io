@@ -3,8 +3,8 @@ title:
 date:
 categories:
 tags:
-cover: https://blog.dotres.cn/picx-images-hosting/
-top_img: https://blog.dotres.cn/picx-images-hosting/
+cover: https://img.dotres.cn/
+top_img: https://img.dotres.cn/
 comments: false
 sticky: 0
 mathjax: false
